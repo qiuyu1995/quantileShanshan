@@ -72,16 +72,6 @@ BEGIN_RCPP
     return rcpp_result_gen;
 END_RCPP
 }
-// rcpp_hello_world
-List rcpp_hello_world();
-RcppExport SEXP _quantileShanshan_rcpp_hello_world() {
-BEGIN_RCPP
-    Rcpp::RObject rcpp_result_gen;
-    Rcpp::RNGScope rcpp_rngScope_gen;
-    rcpp_result_gen = Rcpp::wrap(rcpp_hello_world());
-    return rcpp_result_gen;
-END_RCPP
-}
 // w_path_simulation
 double w_path_simulation(arma::vec a, arma::mat B, arma::vec c, double alpha_0, double alpha_1, arma::vec lam_list, arma::vec beta_0_w0_list, arma::mat beta_w0_mat, arma::mat theta_w0_mat);
 RcppExport SEXP _quantileShanshan_w_path_simulation(SEXP aSEXP, SEXP BSEXP, SEXP cSEXP, SEXP alpha_0SEXP, SEXP alpha_1SEXP, SEXP lam_listSEXP, SEXP beta_0_w0_listSEXP, SEXP beta_w0_matSEXP, SEXP theta_w0_matSEXP) {
@@ -107,7 +97,6 @@ static const R_CallMethodDef CallEntries[] = {
     {"_quantileShanshan_LamPath", (DL_FUNC) &_quantileShanshan_LamPath, 3},
     {"_quantileShanshan_solution_for_given_lambda", (DL_FUNC) &_quantileShanshan_solution_for_given_lambda, 4},
     {"_quantileShanshan_Simulation_LamPath", (DL_FUNC) &_quantileShanshan_Simulation_LamPath, 4},
-    {"_quantileShanshan_rcpp_hello_world", (DL_FUNC) &_quantileShanshan_rcpp_hello_world, 0},
     {"_quantileShanshan_w_path_simulation", (DL_FUNC) &_quantileShanshan_w_path_simulation, 9},
     {NULL, NULL, 0}
 };

@@ -70,10 +70,6 @@ Simulation_LamPath <- function(y, X, tau, lam_list) {
     .Call(`_quantileShanshan_Simulation_LamPath`, y, X, tau, lam_list)
 }
 
-rcpp_hello_world <- function() {
-    .Call(`_quantileShanshan_rcpp_hello_world`)
-}
-
 #'Case-weight adjusted solution path for L2 regularized nonsmooth problem (quantile regression and svm)
 #'
 #' @description
