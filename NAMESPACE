@@ -1,1 +1,4 @@
+useDynLib(quantileShanshan, .registration=TRUE)
 exportPattern("^[[:alpha:]]+")
+importFrom(Rcpp, evalCpp)
+import(mathjaxr)

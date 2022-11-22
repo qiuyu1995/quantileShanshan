@@ -1,11 +1,14 @@
 Package: quantileShanshan
 Type: Package
-Title: What the Package Does (Title Case)
-Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Title: Replicate shanshan's simulation on case-weight adjusted quantile regression
+Version: 1.0
+Date: 2022-07-18
+Author: Qiuyu Gu
+Maintainer: Qiuyu Gu <gu.675@osu.edu>
+Description: Compare w-path with lambda-path
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.8), CVXR, mathjaxr
+LinkingTo: Rcpp, RcppArmadillo
+RoxygenNote: 7.2.0
+RdMacros: mathjaxr
 Encoding: UTF-8
-LazyData: true
